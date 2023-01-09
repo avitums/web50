@@ -3,19 +3,17 @@
  https://cs50.harvard.edu/web/2020/projects/0/search/     */
 
 
-body {
-  
-  background: #fff;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  display: block;
-
+body 
+{  
+    background: #fff;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 
 }
 
-body, input, button {
- 
+input, button 
+{ 
     font-size: 14px;
     font-family: Roboto,arial,sans-serif;
     color: #202124;
@@ -23,13 +21,12 @@ body, input, button {
 
 
 
-element.style {
-  background: url(/images/searchbox/desktop_searchbox_sprites318_hr.webp);
+.header_links {
+  display: block; 
+  text-align: right;
+  font-family: Roboto,arial,sans-serif;
+  color: #f8ef00;
+  text-decoration: none;
+  visit
+
 }
-  
-  h1 {
-    font-size: 2em;
-    font-weight: bold;
-    color: #444444;
-    margin-top: 0;
-  }
