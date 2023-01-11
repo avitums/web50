@@ -2,14 +2,38 @@
  This css file is for image search assigment:             
  https://cs50.harvard.edu/web/2020/projects/0/search/     */
 
-
-body 
+.input_form 
 {  
-    background: #fff;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    align-items: center;
+    transform: translateY(-50%);
+    transform: translateX(-50%); 
+    background: rgb(242, 250, 252);
 
+
+}
+
+.center_align
+{
+  text-align: center;
+}
+
+.search_input
+{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 4px;
+}
+
+body
+
+{
+    background: rgb(242, 250, 252);
 }
 
 input, button 
@@ -19,14 +43,11 @@ input, button
     color: #202124;
 }
 
-
-
 .header_links {
-  display: block; 
+  text-decoration: none;
   text-align: right;
   font-family: Roboto,arial,sans-serif;
-  color: #f8ef00;
-  text-decoration: none;
-  visit
+  color: #444331;
+  font-size: 14px;
 
 }
