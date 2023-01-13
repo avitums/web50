@@ -18,50 +18,41 @@
             </div>
         </header>
         
-        <form class="input_form">
-            <table>
-              <tr>
-                <td>
-                  <label for="all_words">all these words:</label>
-                  <input type="text" id="all_words" name="all_words">
-                </td>
-                <td>
+        <form class="row_format" action="https://www.google.com/search" method="get" target="_blank"> 
+            <table class="table_format">
+            
+              <tr >
+                    <td> <label for="all_words">all these words:</label></td>
+                    <td> <input class = "search_input" type="text" id="search-query" name="q">
+                         <input type="hidden" name="as" value="">
+                        </td>
               </tr>
-              <tr>
-                  <label for="exact">this exact word or phrase:</label>
-                  <input type="text" id="exact" name="email">
-                </td>
+              
+<!--               <tr class="row_format">
+                <td><label for="exact">this exact word or phrase:</label></td>
+                <td><input class = "search_input" type="text" id="exact" name="email"></td> 
               </tr>
-              <tr>
-                <td>
-                  <label for="any">any of these words:</label>
-                  <input type="text" id="any" name="any">
-                </td>
-            </tr>
-               <tr>
-                <td>
-                  <label for="none">none of these words:</label>
-                  <input type="text" id="none" name="none">
-                </td>
+              
+              <tr class="row_format">
+                <td><label for="any">any of these words:</label></td>
+                <td><input class = "search_input" type="text" id="any" name="any"></td>
               </tr>
+               
+              <tr class="row_format">
+                <td><label for="none">none of these words:</label></td>
+                <td><input class = "search_input" type="text" id="none" name="none"></td>
+              </tr>
+               -->
               <tr>
-                <td colspan="2">
-                  <input type="submit" value="Submit">
+                <td class="center_align" colspan="2">
+                  <input type="submit" value="Google Search">
                 </td>
               </tr>
             </table>
           </form>
           
 
+<!-- Need to research how you get the webpage format from the text.   -->
 
-
-        <!-- <div class="input_form">
-            <form action="https://www.google.com/search" method="get" target="_blank">
-                <input class = "search_input" type="text" id="search-query" name="q">
-                <input type="hidden" name="tbm" value="isch">   
-                <p class="center_align" ><input type="submit" value="Search Images"></p>  
-    
-            </form>
-        </div> -->
     </body>
 </html>
