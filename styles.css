@@ -2,22 +2,7 @@
  This css file is for image search assigment:             
  https://cs50.harvard.edu/web/2020/projects/0/search/     */
 
-.input_form 
-{  
-    position: absolute;
-    top: 50%; 
-    left: 50%; 
-    align-items: center;
-    transform: translateY(-50%);
-    transform: translateX(-50%); 
-    background: rgb(255, 255, 255);
-
-
-}
-
-.google_logo
-
-{
+.google_logo{
   position: absolute;
   top: 32%; 
   left: 50%; 
@@ -27,53 +12,118 @@
   background: rgb(255, 255, 255);
   float:right;
 }
-
-.adv_search
-
-{ 
-
+ 
+.adv_search{ 
   font-family: Roboto,arial,sans-serif;
   color: #d93025;
-  font-size: 20px;}
-
-.center_align
-{
-  text-align: center;
-  align-items: center;
-}
-
-
-.line_format
-{
-  margin: 20px;
+  font-size: 20px;
+} 
+ 
+.line_format{
+  margin-top: 20px;
   border-bottom: 1px solid #ebebeb;
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: rgb(235, 235, 235);
+ }
 
+.find_page{ 
+  vertical-align: bottom;
+  display: inline-block;
+  font-family: Roboto,arial,sans-serif;
+  font-size: 13px;
+  color: #333;
+  margin: 20px;
+  min-width: 167px;
+  width: 16%;
+  color: #333;
+  align-items: center;
+ }
+
+.to_do{  
+  vertical-align: bottom;
+  display: inline-block;
+  font-family: Roboto,arial,sans-serif;
+  min-width: 200px;
+  width: 33%;
+  font-size: 13px;
+  font-weight: 700;
+  color: #777;
+  margin: 5px;
+  align-items: center;
+} 
+
+.rows_format{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  line-height: 20px;
 }
 
-.table_format
-{
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 10px;
+}
+
+.grid-item {
+  background-color: #f2f2f2;
+  border: 1px solid #fff;
+  padding: 20px;
+}
+
+ .column_0{
+  display: inline-block;
+  min-width: 167px;
+  font-family: Roboto,arial,sans-serif;
+  width: 16%;
+  height: 42px;
+  color: #222;
+  font-size: 13px;
+  line-height: 16px;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+
+.column_1{
+  display: inline-block;
+  width: 286px;
+  vertical-align: middle;
+}
+
+.adv_input{
+  display: inline-block;
+  width: 286px;
+  font-family: Roboto,arial,sans-serif;
+  border-radius: 1px;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  font-size: 13px;
+  height: 25px;
+  padding: 1px 8px;
+}
+
+.column_2{
+  font-family: Roboto,arial,sans-serif;
+  display: inline-block;
+  width: 32%;
+  min-width: 160px;
+  margin: 0 0 8px 1%;
+  color: #555;
+  font-size: 11px;
+  padding-left: 5px;
+  vertical-align: middle;
+  position: relative;
+  margin-left: 20px;
+}
+
+.center_align{
+  text-align: center;
+  align-items: center;
+}
  
-  position: absolute;
-  top: 50%; 
-  left: 50%; 
-  align-items: center;
-  transform: translateY(-50%);
-  transform: translateX(-50%); 
-  background: rgb(255, 255, 255);
-  float:right;
-/*   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; */
-}
-
-.submit_button
-{
-
+.submit_button{
   background-color: #f8f9fa;
   border: 1px solid #f8f9fa;
   border-top-width: 1px;
@@ -119,19 +169,22 @@
   user-select: none;
 }
 
-
-.row_format
-{
-/*   display: flex;
-  flex-direction: row;
-  justify-content: center; */
-  align-items: right;
-  flex-wrap: wrap;
+.adv_submit_button{
+  line-height:100%;
+  height:30px;
+  min-width:120px;
+  user-select: none;
+  line-height: 100%;
+  height: 30px;
+  box-shadow: none;
+  background-color: #4d90fe;
+  background-image: -webkit-linear-gradient(top,#4d90fe); 
+  min-width: 120px;
+  border: 1px solid #3079ed;
+  color: #fff;
 }
 
-
-.search_input
-{ 
+.search_input{ 
     display: flex;
     z-index: 3;
     height: 44px;
@@ -144,17 +197,16 @@
     max-width: 584px;
 }
 
-body
-
-{
-    background: rgb(255, 255, 255);
+body{
+  background: rgb(255, 255, 255);
 }
 
-input, button 
-{ 
-    font-size: 14px;
-    font-family: Roboto,arial,sans-serif;
-    color: #202124;
+.input_form{
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120vh; 
 }
 
 .header_links {
@@ -166,7 +218,6 @@ input, button
   font-family: Roboto,arial,sans-serif;
   color: #060606;;
   font-size: 14px;
-
 }
 
 a:link {
@@ -176,5 +227,14 @@ a:link {
 
 a:visited {
   color: #060606;
-
 }
+
+
+/* Things to do
+
+
+2. add link to I'm feeling lucky
+3. create a git hub webpage for it
+4. submit the project to CS50  
+
+

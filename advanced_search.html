@@ -5,68 +5,113 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Advanced Search</title>
-        <link rel="stylesheet" href="styles.css">    
-    </head>     
+  <head>
+      <title>Advanced Search</title>
+      <link rel="stylesheet" href="styles.css">    
+  </head>     
     
-    <body>
-        <header>
-            <div>
-              <p><img src="Google_Images__logo.png" alt="Google Logo with Allen Turing Doodle" width="74" height="24" ></p>
-              <label class="adv_search" style="margin-left:10px">Advanced Search</lable>
-            </div>
-          
-            <div class="header_links">
-                <a href="index.html">Home &nbsp </a> 
-                <a href="image_search.html">Image search</a>
-            </div>
-            
-            <div class="line_format">
-            
-            </div>
-
-        </header>
+  <body>
+    <header>
+      <div>
+        <p><img src="Google_Images__logo.png" alt="Google Logo" width="74" height="24" ></p>
+        <label class="adv_search" style="margin-left:10px">Advanced Search</lable>
+      </div>
+      <div class="header_links">
+        <a href="index.html">Home &nbsp </a> 
+        <a href="image_search.html">Image search</a>
+      </div>
+      <div class="line_format"> </div>
+    </header>
        
-
-
- 
-
-        <form class="row_format" action="https://www.google.com/search" method="get" target="_blank"> 
-            <table class="table_format">
-            
-              <tr >
-                    <td> <label for="all_words">all these words:</label></td>
-                    <td> <input class = "search_input" type="text" id="search-query" name="q">
-                         <input type="hidden" name="as" value="">
-                        </td>
-              </tr>
-              
-<!--               <tr class="row_format">
-                <td><label for="exact">this exact word or phrase:</label></td>
-                <td><input class = "search_input" type="text" id="exact" name="email"></td> 
-              </tr>
-              
-              <tr class="row_format">
-                <td><label for="any">any of these words:</label></td>
-                <td><input class = "search_input" type="text" id="any" name="any"></td>
-              </tr>
-               
-              <tr class="row_format">
-                <td><label for="none">none of these words:</label></td>
-                <td><input class = "search_input" type="text" id="none" name="none"></td>
-              </tr>
-               -->
-              <tr>
-                <td class="center_align" colspan="2">
-                  <input type="submit" value="Google Search">
-                </td>
-              </tr>
-            </table>
-          </form>
+    <!--  ----------------------Find pages with -------------- -->
+    
+    <div class = "rows_format">
+      <div>
+        <p class="find_page">Find pages with...</p>
+      </div>  
+      <div>
+        <p class="column_1"></p>
+      </div>  
+      <div>
+        <p class="to_do">To do this in the search box</p>
+      </div>  
+    </div>
+    
+    <form action="https://www.google.com/search" method="get">     
+        
+      <!-- ----------------------all these words----------------------------------  -->
+        <div class = "rows_format">
+        
+          <div class="column_0">
+            <p>all these words:</p>                                   
+          </div>
           
+          <div class="column_1">
+            <input class= "adv_input"  name="as_q">     
+          </div>
 
-<!-- Need to research how you get the webpage format from the text.   -->
+          <div  class="column_2" >
+              <p>Type the important words: tricolor rat terrier</p>
+          </div>   
+        </div>
+      <!-- -------------------this exact word or phrase---------------------------  -->
+        <div class = "rows_format">
 
+          <div class="column_0">
+              <p>this exact word or phrase:</p>
+          </div>
+          
+          <div class="column_1">
+            <input class= "adv_input"  name="as_epq" type="text">     
+          </div>
+
+          <div  class="column_2" >
+              <p>Put exact words in quotes:  "rat terrier"</p>
+          </div>   
+        </div>  
+      <!-- -------------------any of these words ----------------------------------  -->
+        <div class = "rows_format">
+
+          <div class="column_0">
+              <p>any of these words:</p>
+          </div>
+          
+          <div class="column_1">
+            <input class= "adv_input"  name="as_oq" type="text">     
+          </div>
+
+          <div  class="column_2" >
+            <p>Type OR between all the words you want: miniature OR standard</p>
+          </div>   
+        </div>  
+      <!-- ------------------none of these words---------------------------------  -->
+        <div class = "rows_format">
+
+          <div class="column_0">
+            <p>none of these words:</p>
+          </div>
+          
+          <div class="column_1">
+            <input class= "adv_input"  name="as_eq" type="text" >     
+            <!-- <input type="hidden" name="as_eq" value autofocus="autofocus">  -->
+          </div>
+
+          <div  class="column_2" >
+            <p>Put a minus sign just before words you don't want:  -rodent, -"Jack Russell"</p>
+          </div>   
+        </div>  
+  <!-- -----------------------------submit button---------------------------------  -->
+        <div class="center_align">
+          <input class="adv_submit_button" type="submit" value="Advanced Search"> 
+        </div>
+
+      </form>           
+  
     </body>
-</html>
+</html>        
+        
+
+
+
+
+
