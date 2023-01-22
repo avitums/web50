@@ -201,7 +201,6 @@
   background-color: initial;
 }
 
-
 .search_input{ 
   background: #fff;
   background-image: initial;
@@ -213,9 +212,6 @@
   background-origin: initial;
   background-clip: initial;
   background-color: rgb(255, 255, 255);
-  
-  
-  
   font-family: Roboto,arial,sans-serif;
   padding: 10px;
   box-sizing: border-box;
@@ -231,8 +227,6 @@
   border-radius: 24px;
   width: 278px;
 }
-
-
 
 /* body{
   background: rgb(255, 255, 255);
@@ -267,14 +261,6 @@ a:visited {
 }
 
 
-/* Things to do
-
-1. fix the search bar
-2. create a git hub webpage for it
-3. submit the project to CS50
-4. create a video for it
-5. create a readme file
-6. put on git hub as webpages
   
 
 
