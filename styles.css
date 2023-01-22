@@ -1,5 +1,5 @@
 /* CS50W Project 0 by Alan Vitums started 2023-1-8                    
- This css file is for image search assigment:             
+ This css file is for the search assigment:             
  https://cs50.harvard.edu/web/2020/projects/0/search/     */
 
 .google_logo{
@@ -9,7 +9,7 @@
   align-items: center;
   transform: translateY(-50%);
   transform: translateX(-50%); 
-  background: rgb(255, 255, 255);
+  /* background: rgb(255, 255, 255); */
   float:right;
 }
  
@@ -68,7 +68,7 @@
 }
 
 .grid-item {
-  background-color: #f2f2f2;
+  /* background-color: #f2f2f2; */
   border: 1px solid #fff;
   padding: 20px;
 }
@@ -169,7 +169,7 @@
   user-select: none;
 }
 
-.adv_submit_button{
+ .adv_submit_button{
   line-height:100%;
   height:30px;
   min-width:120px;
@@ -182,24 +182,61 @@
   min-width: 120px;
   border: 1px solid #3079ed;
   color: #fff;
+} 
+
+.search_input:focus {
+  
+  border: solid 1px gray;
+  background-color: initial;
 }
+
+.search_input:active{
+  border: solid 1px gray;
+  background-color: initial;
+}
+
+
+.search_input:hover{
+  border: solid 1px gray;
+  background-color: initial;
+}
+
 
 .search_input{ 
-    display: flex;
-    z-index: 3;
-    height: 44px;
-    background: #fff;
-    border: 1px solid #dfe1e5;
-    box-shadow: none;
-    border-radius: 24px;
-    margin: 0 auto;
-    width: 638px;
-    max-width: 584px;
+  background: #fff;
+  background-image: initial;
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: rgb(255, 255, 255);
+  
+  
+  
+  font-family: Roboto,arial,sans-serif;
+  padding: 10px;
+  box-sizing: border-box;
+  height: 34px;
+  font-size: 16px;
+  flex: 100%;
+  margin: 20px;
+  display: flex;
+  z-index: 20;
+  height: 34px;
+  /* background: #fff; */
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  width: 278px;
 }
 
-body{
+
+
+/* body{
   background: rgb(255, 255, 255);
-}
+} */
 
 .input_form{
   margin: 20px;
@@ -232,9 +269,12 @@ a:visited {
 
 /* Things to do
 
-
-2. add link to I'm feeling lucky
-3. create a git hub webpage for it
-4. submit the project to CS50  
+1. fix the search bar
+2. create a git hub webpage for it
+3. submit the project to CS50
+4. create a video for it
+5. create a readme file
+6. put on git hub as webpages
+  
 
 
